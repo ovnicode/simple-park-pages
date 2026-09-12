@@ -1,0 +1,13 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Baloo 2", "Segoe UI", ui-sans-serif, system-ui, sans-serif;
+  --color-park-navy: #0b1533;
+  --color-park-navy-dark: #060b1e;
+  --color-park-blue: #1a56ff;
+  --color-park-cyan: #38e0ff;
+}
+
+body {
+  font-family: var(--font-display);
+}

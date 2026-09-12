@@ -2,10 +2,134 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <meta http-equiv="refresh" content="0; url=/privacy-policy.html">
-  <title>Simple Park</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Simple Park — A pocket-sized parking puzzle</title>
+  <meta name="description" content="Simple Park is a relaxing driving puzzle built around tight turns, careful reversing, and satisfying perfect finishes. 19 handcrafted parking challenges. Coming soon on Google Play.">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon-180.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/styles.css">
 </head>
-<body>
-  <p>Redirecting to the <a href="/privacy-policy.html">Simple Park Privacy Policy</a>.</p>
+<body class="bg-park-navy text-slate-100 antialiased">
+
+  <header class="sticky top-0 z-30 border-b border-white/10 bg-park-navy/90 backdrop-blur">
+    <div class="mx-auto flex max-w-5xl items-center justify-between px-5 py-3">
+      <a href="/" class="flex items-center gap-2.5">
+        <img src="assets/icon-512.webp" alt="" width="36" height="36" class="rounded-lg shadow-md shadow-black/30">
+        <span class="text-lg font-extrabold tracking-tight text-white">Simple Park</span>
+      </a>
+      <nav class="flex items-center gap-5 text-sm font-semibold text-slate-300">
+        <a href="#screenshots" class="hidden transition hover:text-white sm:inline">Screenshots</a>
+        <a href="#features" class="hidden transition hover:text-white sm:inline">Features</a>
+        <a href="privacy-policy.html" class="transition hover:text-white">Privacy Policy</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="relative overflow-hidden">
+      <div class="absolute inset-0 -z-10 bg-linear-to-b from-park-navy via-park-navy to-park-navy-dark"></div>
+      <div class="mx-auto grid max-w-5xl items-center gap-10 px-5 py-16 sm:py-20 lg:grid-cols-2 lg:py-24">
+        <div>
+          <p class="inline-flex items-center gap-2 rounded-full border border-park-cyan/30 bg-park-cyan/10 px-3 py-1 text-xs font-bold uppercase tracking-wide text-park-cyan">
+            Coming soon on Google Play
+          </p>
+          <h1 class="mt-5 text-4xl font-extrabold leading-tight tracking-tight text-white sm:text-5xl">
+            Master tight spaces in a pocket-sized parking puzzle.
+          </h1>
+          <p class="mt-5 text-lg leading-relaxed text-slate-300">
+            Take the wheel and park with precision in Simple Park, a relaxing driving puzzle built
+            around tight turns, careful reversing, and satisfying perfect finishes.
+          </p>
+          <div class="mt-8 flex flex-wrap items-center gap-4">
+            <a href="#screenshots"
+               class="inline-flex items-center justify-center rounded-xl bg-park-blue px-6 py-3 text-base font-bold text-white shadow-lg shadow-park-blue/30 transition hover:bg-blue-500">
+              See it in action
+            </a>
+            <span class="text-sm font-medium text-slate-400">19 handcrafted stages &middot; 57 stars to earn</span>
+          </div>
+        </div>
+        <div class="relative">
+          <img src="assets/feature-graphic.webp" alt="Simple Park — a car glowing in its parking spot at night"
+               class="w-full rounded-2xl border border-white/10 shadow-2xl shadow-black/50" width="1024" height="500">
+        </div>
+      </div>
+    </section>
+
+    <section id="screenshots" class="border-t border-white/5 bg-park-navy-dark py-16 sm:py-20">
+      <div class="mx-auto max-w-5xl px-5">
+        <h2 class="text-center text-2xl font-extrabold text-white sm:text-3xl">See the game</h2>
+        <p class="mx-auto mt-3 max-w-xl text-center text-slate-400">
+          From the main menu to crowded lots and curbside spaces — a look at what's under the hood.
+        </p>
+        <div class="mt-10 grid grid-cols-1 gap-6 sm:grid-cols-3">
+          <figure class="group overflow-hidden rounded-2xl border border-white/10 bg-white/5">
+            <img src="assets/screenshot-main-menu.webp" alt="Simple Park main menu" class="w-full transition duration-300 group-hover:scale-105">
+            <figcaption class="px-4 py-3 text-sm font-semibold text-slate-300">Main menu</figcaption>
+          </figure>
+          <figure class="group overflow-hidden rounded-2xl border border-white/10 bg-white/5">
+            <img src="assets/screenshot-gameplay.webp" alt="Gameplay on Stage 1" class="w-full transition duration-300 group-hover:scale-105">
+            <figcaption class="px-4 py-3 text-sm font-semibold text-slate-300">Stage 1 gameplay</figcaption>
+          </figure>
+          <figure class="group overflow-hidden rounded-2xl border border-white/10 bg-white/5">
+            <img src="assets/screenshot-stage-select.webp" alt="Stage select screen" class="w-full transition duration-300 group-hover:scale-105">
+            <figcaption class="px-4 py-3 text-sm font-semibold text-slate-300">Stage select</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section id="features" class="py-16 sm:py-20">
+      <div class="mx-auto max-w-5xl px-5">
+        <h2 class="text-center text-2xl font-extrabold text-white sm:text-3xl">Why you'll like it</h2>
+        <div class="mt-10 grid grid-cols-1 gap-6 sm:grid-cols-2">
+          <div class="rounded-2xl border border-white/10 bg-white/5 p-6">
+            <div class="text-2xl">🅿️</div>
+            <h3 class="mt-3 font-bold text-white">19 handcrafted challenges</h3>
+            <p class="mt-1.5 text-sm leading-relaxed text-slate-400">
+              From wide-open tutorial bays to crowded lots, curbside spaces, and multi-level garages.
+            </p>
+          </div>
+          <div class="rounded-2xl border border-white/10 bg-white/5 p-6">
+            <div class="text-2xl">🎮</div>
+            <h3 class="mt-3 font-bold text-white">Intuitive portrait controls</h3>
+            <p class="mt-1.5 text-sm leading-relaxed text-slate-400">
+              Steering, drive, brake, and reverse — built for one-handed, on-the-go play.
+            </p>
+          </div>
+          <div class="rounded-2xl border border-white/10 bg-white/5 p-6">
+            <div class="text-2xl">⭐</div>
+            <h3 class="mt-3 font-bold text-white">Precision scoring</h3>
+            <p class="mt-1.5 text-sm leading-relaxed text-slate-400">
+              Park cleanly and quickly to earn up to three stars on every stage.
+            </p>
+          </div>
+          <div class="rounded-2xl border border-white/10 bg-white/5 p-6">
+            <div class="text-2xl">📴</div>
+            <h3 class="mt-3 font-bold text-white">Play anywhere, offline</h3>
+            <p class="mt-1.5 text-sm leading-relaxed text-slate-400">
+              Short levels made for quick sessions, with progress saved locally on your device.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="border-t border-white/10 bg-park-navy-dark">
+    <div class="mx-auto flex max-w-5xl flex-col items-center gap-3 px-5 py-8 text-sm text-slate-400 sm:flex-row sm:justify-between">
+      <p>&copy; 2026 Ovnicode. Simple Park.</p>
+      <div class="flex items-center gap-5">
+        <a href="privacy-policy.html" class="font-semibold text-slate-300 transition hover:text-white">Privacy Policy</a>
+        <a href="mailto:support@ovnicode.com" class="font-semibold text-slate-300 transition hover:text-white">Contact</a>
+      </div>
+    </div>
+  </footer>
+
 </body>
 </html>
