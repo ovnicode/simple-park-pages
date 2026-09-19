@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Simple Park — A pocket-sized parking puzzle</title>
-  <meta name="description" content="Simple Park is a relaxing driving puzzle built around tight turns, careful reversing, and satisfying perfect finishes. 19 handcrafted parking challenges. Coming soon on Google Play.">
+  <meta name="description" content="Simple Park is a relaxing driving puzzle built around tight turns, careful reversing, and satisfying perfect finishes. 19 handcrafted parking challenges. Available on Android, Windows and Linux.">
 
   <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
   <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon-180.png">
@@ -26,7 +26,12 @@
       <nav class="flex items-center gap-5 text-sm font-semibold text-slate-300">
         <a href="#screenshots" class="hidden transition hover:text-white sm:inline">Screenshots</a>
         <a href="#features" class="hidden transition hover:text-white sm:inline">Features</a>
-        <a href="privacy-policy.html" class="transition hover:text-white">Privacy Policy</a>
+        <a href="#download" class="hidden transition hover:text-white sm:inline">Download</a>
+        <a href="privacy-policy.html" class="hidden transition hover:text-white sm:inline">Privacy Policy</a>
+        <a href="https://play.google.com/store/apps/details?id=com.ovnicode.gamestudio.simplepark"
+           class="shrink-0 transition hover:opacity-80">
+          <img src="assets/get-it-on-google-play-badge.svg" alt="Get it on Google Play" width="104" height="40" class="h-10 w-auto">
+        </a>
       </nav>
     </div>
   </header>
@@ -37,7 +42,7 @@
       <div class="mx-auto grid max-w-5xl items-center gap-10 px-5 py-16 sm:py-20 lg:grid-cols-2 lg:py-24">
         <div>
           <p class="inline-flex items-center gap-2 rounded-full border border-park-cyan/30 bg-park-cyan/10 px-3 py-1 text-xs font-bold uppercase tracking-wide text-park-cyan">
-            Coming soon on Google Play
+            Available on Android, Windows &amp; Linux
           </p>
           <h1 class="mt-5 text-4xl font-extrabold leading-tight tracking-tight text-white sm:text-5xl">
             Master tight spaces in a pocket-sized parking puzzle.
@@ -46,13 +51,24 @@
             Take the wheel and park with precision in Simple Park, a relaxing driving puzzle built
             around tight turns, careful reversing, and satisfying perfect finishes.
           </p>
-          <div class="mt-8 flex flex-wrap items-center gap-4">
-            <a href="#screenshots"
-               class="inline-flex items-center justify-center rounded-xl bg-park-blue px-6 py-3 text-base font-bold text-white shadow-lg shadow-park-blue/30 transition hover:bg-blue-500">
-              See it in action
+          <div class="mt-8 flex flex-col items-start gap-4">
+            <a href="https://play.google.com/store/apps/details?id=com.ovnicode.gamestudio.simplepark"
+               class="shrink-0 transition hover:opacity-80">
+              <img src="assets/get-it-on-google-play-badge.svg" alt="Get it on Google Play" width="155" height="60" class="h-14 w-auto">
             </a>
-            <span class="text-sm font-medium text-slate-400">19 handcrafted stages &middot; 57 stars to earn</span>
+            <div class="flex flex-wrap gap-3">
+              <a href="https://github.com/ovnicode/simple-park-pages/releases/latest/download/SimplePark-Setup.exe" data-os-button="windows"
+                 class="inline-flex items-center justify-center rounded-xl border border-white/15 px-6 py-3 text-base font-bold text-white transition hover:bg-white/10">
+                Download for Windows
+              </a>
+              <a href="https://github.com/ovnicode/simple-park-pages/releases/latest/download/SimplePark-x86_64.AppImage" data-os-button="linux"
+                 class="inline-flex items-center justify-center rounded-xl border border-white/15 px-6 py-3 text-base font-bold text-white transition hover:bg-white/10">
+                Download for Linux
+              </a>
+            </div>
           </div>
+          <a href="#screenshots" class="mt-4 inline-block text-sm font-semibold text-park-cyan transition hover:underline">See it in action &darr;</a>
+          <p class="mt-4 text-sm font-medium text-slate-400">19 handcrafted stages &middot; 57 stars to earn</p>
         </div>
         <div class="relative">
           <img src="assets/feature-graphic.webp" alt="Simple Park — a car glowing in its parking spot at night"
@@ -119,17 +135,107 @@
         </div>
       </div>
     </section>
+
+    <section id="download" class="border-t border-white/5 bg-park-navy-dark py-16 sm:py-20">
+      <div class="mx-auto max-w-5xl px-5">
+        <h2 class="text-center text-2xl font-extrabold text-white sm:text-3xl">Download Simple Park</h2>
+        <p class="mx-auto mt-3 max-w-xl text-center text-slate-400">
+          Free on Android, and now on your desktop with keyboard controls you can rebind in Settings.
+        </p>
+        <div class="mt-10 grid grid-cols-1 gap-6 md:grid-cols-3">
+
+          <div data-os-card="android" class="flex flex-col rounded-2xl border border-white/10 bg-white/5 p-6">
+            <p data-os-tag class="mb-3 hidden self-start rounded-full bg-park-cyan/15 px-3 py-1 text-xs font-bold uppercase tracking-wide text-park-cyan">Recommended for your device</p>
+            <div class="text-2xl">🤖</div>
+            <h3 class="mt-3 text-lg font-bold text-white">Android</h3>
+            <p class="mt-1.5 flex-1 text-sm leading-relaxed text-slate-400">
+              Install from Google Play and get automatic updates.
+            </p>
+            <a href="https://play.google.com/store/apps/details?id=com.ovnicode.gamestudio.simplepark" class="mt-5 self-start transition hover:opacity-80">
+              <img src="assets/get-it-on-google-play-badge.svg" alt="Get it on Google Play" width="130" height="50" class="h-12 w-auto">
+            </a>
+          </div>
+
+          <div data-os-card="windows" class="flex flex-col rounded-2xl border border-white/10 bg-white/5 p-6">
+            <p data-os-tag class="mb-3 hidden self-start rounded-full bg-park-cyan/15 px-3 py-1 text-xs font-bold uppercase tracking-wide text-park-cyan">Recommended for your device</p>
+            <div class="text-2xl">🪟</div>
+            <h3 class="mt-3 text-lg font-bold text-white">Windows</h3>
+            <p class="mt-1.5 text-sm leading-relaxed text-slate-400">
+              Windows 10 or 11, 64-bit. Run the installer and launch from the Start menu.
+            </p>
+            <p class="mt-2 flex-1 text-xs leading-relaxed text-slate-500">
+              Windows may show a &ldquo;Windows protected your PC&rdquo; notice because the installer isn't code-signed yet.
+              Choose <span class="font-semibold text-slate-400">More info &rarr; Run anyway</span>.
+            </p>
+            <a href="https://github.com/ovnicode/simple-park-pages/releases/latest/download/SimplePark-Setup.exe" data-os-button="windows"
+               class="mt-5 inline-flex items-center justify-center rounded-xl border border-white/15 px-6 py-3 text-base font-bold text-white transition hover:bg-white/10">
+              Download installer (.exe)
+            </a>
+          </div>
+
+          <div data-os-card="linux" class="flex flex-col rounded-2xl border border-white/10 bg-white/5 p-6">
+            <p data-os-tag class="mb-3 hidden self-start rounded-full bg-park-cyan/15 px-3 py-1 text-xs font-bold uppercase tracking-wide text-park-cyan">Recommended for your device</p>
+            <div class="text-2xl">🐧</div>
+            <h3 class="mt-3 text-lg font-bold text-white">Linux</h3>
+            <p class="mt-1.5 text-sm leading-relaxed text-slate-400">
+              64-bit (x86_64). Make the AppImage executable, then run it:
+            </p>
+            <pre class="mt-2 flex-1 overflow-x-auto rounded-lg bg-black/40 p-3 text-xs leading-relaxed text-slate-300"><code>chmod +x SimplePark-x86_64.AppImage
+./SimplePark-x86_64.AppImage</code></pre>
+            <p class="mt-2 text-xs leading-relaxed text-slate-500">
+              If it won't start, install <span class="font-semibold text-slate-400">libfuse2</span>.
+              Prefer no AppImage? <a href="https://github.com/ovnicode/simple-park-pages/releases/latest/download/SimplePark-linux-x86_64.tar.gz" class="font-semibold text-slate-400 underline transition hover:text-white">Download the .tar.gz</a>.
+            </p>
+            <a href="https://github.com/ovnicode/simple-park-pages/releases/latest/download/SimplePark-x86_64.AppImage" data-os-button="linux"
+               class="mt-5 inline-flex items-center justify-center rounded-xl border border-white/15 px-6 py-3 text-base font-bold text-white transition hover:bg-white/10">
+              Download AppImage
+            </a>
+          </div>
+
+        </div>
+      </div>
+    </section>
   </main>
 
   <footer class="border-t border-white/10 bg-park-navy-dark">
     <div class="mx-auto flex max-w-5xl flex-col items-center gap-3 px-5 py-8 text-sm text-slate-400 sm:flex-row sm:justify-between">
       <p>&copy; 2026 Ovnicode. Simple Park.</p>
       <div class="flex items-center gap-5">
+        <a href="https://play.google.com/store/apps/details?id=com.ovnicode.gamestudio.simplepark" class="font-semibold text-slate-300 transition hover:text-white">Google Play</a>
+        <a href="#download" class="font-semibold text-slate-300 transition hover:text-white">Download</a>
         <a href="privacy-policy.html" class="font-semibold text-slate-300 transition hover:text-white">Privacy Policy</a>
         <a href="mailto:support@ovnicode.com" class="font-semibold text-slate-300 transition hover:text-white">Contact</a>
       </div>
     </div>
   </footer>
+
+
+  <script>
+    // Highlight the download that fits the visitor's OS. Without JS (or on macOS/iOS/ChromeOS)
+    // every option is shown equally.
+    (function () {
+      var ua = navigator.userAgent || "";
+      var platform = (navigator.userAgentData && navigator.userAgentData.platform) || navigator.platform || "";
+      var os = null;
+      // Android's UA also contains "Linux", so test it first.
+      if (/Android/i.test(ua) || /Android/i.test(platform)) os = "android";
+      else if (/iPhone|iPad|iPod|CrOS/i.test(ua)) os = null;
+      else if (/Win/i.test(platform) || /Windows/i.test(ua)) os = "windows";
+      else if (/Linux/i.test(platform) || /Linux|X11/i.test(ua)) os = "linux";
+      if (!os) return;
+
+      document.querySelectorAll('[data-os-button="' + os + '"]').forEach(function (el) {
+        el.classList.remove("border-white/15", "hover:bg-white/10");
+        el.classList.add("border-transparent", "bg-park-blue", "hover:bg-park-blue/85");
+      });
+      document.querySelectorAll('[data-os-card="' + os + '"]').forEach(function (card) {
+        card.classList.remove("border-white/10");
+        card.classList.add("border-park-cyan/50", "ring-1", "ring-park-cyan/30");
+        var tag = card.querySelector("[data-os-tag]");
+        if (tag) tag.classList.remove("hidden");
+      });
+    })();
+  </script>
 
 </body>
 </html>
