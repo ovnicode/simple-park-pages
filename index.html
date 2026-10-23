@@ -3,191 +3,278 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Simple Park — A pocket-sized parking puzzle</title>
-  <meta name="description" content="Simple Park is a relaxing driving puzzle built around tight turns, careful reversing, and satisfying perfect finishes. 19 handcrafted parking challenges. Available on Android, Windows and Linux.">
+  <title>Simple Park 3D — Master every parking space</title>
+  <meta name="description" content="Simple Park 3D is a relaxing 3D parking puzzle. Steer, reverse and squeeze into 19 handcrafted spots across open lots, curbsides and underground garages. Free on Android, Windows and Linux.">
+  <meta name="theme-color" content="#060b1e">
+  <link rel="canonical" href="https://simple-park.game.ovnicode.com/">
+
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Simple Park 3D">
+  <meta property="og:title" content="Simple Park 3D — Master every parking space">
+  <meta property="og:description" content="A relaxing 3D parking puzzle with 19 handcrafted stages. Free on Android, Windows and Linux.">
+  <meta property="og:url" content="https://simple-park.game.ovnicode.com/">
+  <meta property="og:image" content="https://simple-park.game.ovnicode.com/assets/og-image.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
 
   <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
   <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon-180.png">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 
+  <link rel="preload" as="image" href="assets/hero-bg.webp">
   <link rel="stylesheet" href="css/styles.css">
 </head>
-<body class="bg-park-navy text-slate-100 antialiased">
+<body class="bg-park-navy-dark text-slate-100 antialiased">
 
-  <header class="sticky top-0 z-30 border-b border-white/10 bg-park-navy/90 backdrop-blur">
-    <div class="mx-auto flex max-w-5xl items-center justify-between px-5 py-3">
+  <header class="fixed inset-x-0 top-0 z-40 border-b border-white/10 bg-park-navy-dark/80 backdrop-blur-md">
+    <div class="mx-auto flex h-16 max-w-6xl items-center justify-between gap-4 px-4 sm:px-6">
       <a href="/" class="flex items-center gap-2.5">
-        <img src="assets/icon-512.webp" alt="" width="36" height="36" class="rounded-lg shadow-md shadow-black/30">
-        <span class="text-lg font-extrabold tracking-tight text-white">Simple Park</span>
+        <img src="assets/icon-512.webp" alt="" width="36" height="36" class="size-9 rounded-xl shadow-md shadow-black/40">
+        <span class="font-display text-xl font-extrabold tracking-tight text-white">Simple Park</span>
       </a>
-      <nav class="flex items-center gap-5 text-sm font-semibold text-slate-300">
-        <a href="#screenshots" class="hidden transition hover:text-white sm:inline">Screenshots</a>
-        <a href="#features" class="hidden transition hover:text-white sm:inline">Features</a>
-        <a href="#download" class="hidden transition hover:text-white sm:inline">Download</a>
-        <a href="privacy-policy.html" class="hidden transition hover:text-white sm:inline">Privacy Policy</a>
-        <a href="https://play.google.com/store/apps/details?id=com.ovnicode.gamestudio.simplepark"
-           class="shrink-0 transition hover:opacity-80">
-          <img src="assets/get-it-on-google-play-badge.svg" alt="Get it on Google Play" width="104" height="40" class="h-10 w-auto">
-        </a>
+      <nav class="flex items-center gap-6 text-sm font-semibold text-slate-300">
+        <a href="#gameplay" class="hidden transition hover:text-white md:inline">Gameplay</a>
+        <a href="#features" class="hidden transition hover:text-white md:inline">Features</a>
+        <a href="#achievements" class="hidden transition hover:text-white md:inline">Achievements</a>
+        <a href="#testers" class="hidden transition hover:text-white md:inline">Beta</a>
+        <a href="#download" class="rounded-full bg-park-blue px-4 py-2 text-white shadow-lg shadow-park-blue/30 transition hover:bg-park-blue/85">Play free</a>
       </nav>
     </div>
   </header>
 
   <main>
-    <section class="relative overflow-hidden">
-      <div class="absolute inset-0 -z-10 bg-linear-to-b from-park-navy via-park-navy to-park-navy-dark"></div>
-      <div class="mx-auto grid max-w-5xl items-center gap-10 px-5 py-16 sm:py-20 lg:grid-cols-2 lg:py-24">
-        <div>
-          <p class="inline-flex items-center gap-2 rounded-full border border-park-cyan/30 bg-park-cyan/10 px-3 py-1 text-xs font-bold uppercase tracking-wide text-park-cyan">
-            Available on Android, Windows &amp; Linux
+    <!-- Hero -->
+    <section class="relative isolate flex min-h-[640px] items-center overflow-hidden pt-16 lg:min-h-[min(100svh,860px)]">
+      <img src="assets/hero-bg.webp" alt="" width="1920" height="1080" class="absolute inset-0 -z-20 size-full object-cover">
+      <div class="absolute inset-0 -z-10 bg-linear-to-r from-park-navy-dark via-park-navy-dark/75 to-park-navy-dark/10"></div>
+      <div class="absolute inset-x-0 bottom-0 -z-10 h-40 bg-linear-to-t from-park-navy-dark to-transparent"></div>
+
+      <div class="mx-auto w-full max-w-6xl px-4 py-14 sm:px-6">
+        <div class="max-w-xl">
+          <h1 class="sr-only">Simple Park 3D</h1>
+          <img src="assets/logo.webp" alt="Simple Park — Master every space" width="900" height="449" class="w-full max-w-lg drop-shadow-2xl">
+          <p class="mt-6 text-lg leading-relaxed text-slate-200 sm:text-xl">
+            A relaxing 3D parking puzzle. Read the lot, line up your approach, reverse with care
+            and slide into the spot for a perfect three-star finish.
           </p>
-          <h1 class="mt-5 text-4xl font-extrabold leading-tight tracking-tight text-white sm:text-5xl">
-            Master tight spaces in a pocket-sized parking puzzle.
-          </h1>
-          <p class="mt-5 text-lg leading-relaxed text-slate-300">
-            Take the wheel and park with precision in Simple Park, a relaxing driving puzzle built
-            around tight turns, careful reversing, and satisfying perfect finishes.
-          </p>
-          <div class="mt-8 flex flex-col items-start gap-4">
-            <a href="https://play.google.com/store/apps/details?id=com.ovnicode.gamestudio.simplepark"
-               class="shrink-0 transition hover:opacity-80">
+
+          <div class="mt-8 flex flex-wrap items-center gap-3">
+            <a href="https://play.google.com/store/apps/details?id=com.ovnicode.gamestudio.simplepark" class="transition hover:opacity-85">
               <img src="assets/get-it-on-google-play-badge.svg" alt="Get it on Google Play" width="155" height="60" class="h-14 w-auto">
             </a>
-            <div class="flex flex-wrap gap-3">
-              <a href="https://github.com/ovnicode/simple-park-pages/releases/latest/download/SimplePark-Setup.exe" data-os-button="windows"
-                 class="inline-flex items-center justify-center rounded-xl border border-white/15 px-6 py-3 text-base font-bold text-white transition hover:bg-white/10">
-                Download for Windows
-              </a>
-              <a href="https://github.com/ovnicode/simple-park-pages/releases/latest/download/SimplePark-x86_64.AppImage" data-os-button="linux"
-                 class="inline-flex items-center justify-center rounded-xl border border-white/15 px-6 py-3 text-base font-bold text-white transition hover:bg-white/10">
-                Download for Linux
-              </a>
+            <a href="#download" class="inline-flex h-14 items-center gap-2 rounded-xl border border-white/20 bg-white/5 px-5 font-semibold text-white backdrop-blur transition hover:bg-white/15">
+              <svg viewBox="0 0 24 24" class="size-5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="13" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+              Windows &amp; Linux
+            </a>
+          </div>
+
+          <dl class="mt-10 grid max-w-lg grid-cols-4 gap-2 text-center">
+            <div class="rounded-xl border border-white/10 bg-black/25 px-2 py-3 backdrop-blur">
+              <dt class="sr-only">Stages</dt>
+              <dd class="font-display text-2xl font-extrabold leading-none text-white">19</dd>
+              <dd class="mt-1 text-[11px] font-semibold uppercase tracking-wide text-slate-400">Stages</dd>
             </div>
-          </div>
-          <a href="#screenshots" class="mt-4 inline-block text-sm font-semibold text-park-cyan transition hover:underline">See it in action &darr;</a>
-          <p class="mt-4 text-sm font-medium text-slate-400">19 handcrafted stages &middot; 57 stars to earn</p>
-        </div>
-        <div class="relative">
-          <img src="assets/feature-graphic.webp" alt="Simple Park — a car glowing in its parking spot at night"
-               class="w-full rounded-2xl border border-white/10 shadow-2xl shadow-black/50" width="1024" height="500">
-        </div>
-      </div>
-    </section>
-
-    <section id="screenshots" class="border-t border-white/5 bg-park-navy-dark py-16 sm:py-20">
-      <div class="mx-auto max-w-5xl px-5">
-        <h2 class="text-center text-2xl font-extrabold text-white sm:text-3xl">See the game</h2>
-        <p class="mx-auto mt-3 max-w-xl text-center text-slate-400">
-          From the main menu to crowded lots and curbside spaces — a look at what's under the hood.
-        </p>
-        <div class="mt-10 grid grid-cols-1 gap-6 sm:grid-cols-3">
-          <figure class="group overflow-hidden rounded-2xl border border-white/10 bg-white/5">
-            <img src="assets/screenshot-main-menu.webp" alt="Simple Park main menu" class="w-full transition duration-300 group-hover:scale-105">
-            <figcaption class="px-4 py-3 text-sm font-semibold text-slate-300">Main menu</figcaption>
-          </figure>
-          <figure class="group overflow-hidden rounded-2xl border border-white/10 bg-white/5">
-            <img src="assets/screenshot-gameplay.webp" alt="Gameplay on Stage 1" class="w-full transition duration-300 group-hover:scale-105">
-            <figcaption class="px-4 py-3 text-sm font-semibold text-slate-300">Stage 1 gameplay</figcaption>
-          </figure>
-          <figure class="group overflow-hidden rounded-2xl border border-white/10 bg-white/5">
-            <img src="assets/screenshot-stage-select.webp" alt="Stage select screen" class="w-full transition duration-300 group-hover:scale-105">
-            <figcaption class="px-4 py-3 text-sm font-semibold text-slate-300">Stage select</figcaption>
-          </figure>
+            <div class="rounded-xl border border-white/10 bg-black/25 px-2 py-3 backdrop-blur">
+              <dt class="sr-only">Stars</dt>
+              <dd class="font-display text-2xl font-extrabold leading-none text-park-gold">57</dd>
+              <dd class="mt-1 text-[11px] font-semibold uppercase tracking-wide text-slate-400">Stars</dd>
+            </div>
+            <div class="rounded-xl border border-white/10 bg-black/25 px-2 py-3 backdrop-blur">
+              <dt class="sr-only">Achievements</dt>
+              <dd class="font-display text-2xl font-extrabold leading-none text-white">9</dd>
+              <dd class="mt-1 text-[11px] font-semibold uppercase tracking-wide text-slate-400">Badges</dd>
+            </div>
+            <div class="rounded-xl border border-white/10 bg-black/25 px-2 py-3 backdrop-blur">
+              <dt class="sr-only">Languages</dt>
+              <dd class="font-display text-2xl font-extrabold leading-none text-white">5</dd>
+              <dd class="mt-1 text-[11px] font-semibold uppercase tracking-wide text-slate-400">Languages</dd>
+            </div>
+          </dl>
         </div>
       </div>
     </section>
 
-    <section id="features" class="py-16 sm:py-20">
-      <div class="mx-auto max-w-5xl px-5">
-        <h2 class="text-center text-2xl font-extrabold text-white sm:text-3xl">Why you'll like it</h2>
-        <div class="mt-10 grid grid-cols-1 gap-6 sm:grid-cols-2">
-          <div class="rounded-2xl border border-white/10 bg-white/5 p-6">
-            <div class="text-2xl">🅿️</div>
-            <h3 class="mt-3 font-bold text-white">19 handcrafted challenges</h3>
-            <p class="mt-1.5 text-sm leading-relaxed text-slate-400">
-              From wide-open tutorial bays to crowded lots, curbside spaces, and multi-level garages.
-            </p>
+    <!-- Gameplay gallery -->
+    <section id="gameplay" class="py-20 sm:py-24">
+      <div class="mx-auto max-w-6xl px-4 sm:px-6">
+        <div class="mx-auto max-w-2xl text-center">
+          <p class="text-sm font-bold uppercase tracking-widest text-park-cyan">Gameplay</p>
+          <h2 class="mt-2 text-3xl font-extrabold text-white sm:text-4xl">Every lot is a new puzzle</h2>
+          <p class="mt-4 text-slate-400">
+            Open car parks, tight rows between parked cars, curbside spots and dim underground garages.
+            Each stage asks for a different line.
+          </p>
+        </div>
+
+        <figure class="mt-12">
+          <div class="overflow-hidden rounded-2xl border border-white/10 bg-black shadow-2xl shadow-black/60">
+            <img id="gallery-main" src="assets/shots/gameplay-stage5.webp" alt="Stage 5 — squeezing between parked cars" width="1600" height="900" class="aspect-video w-full object-cover">
           </div>
-          <div class="rounded-2xl border border-white/10 bg-white/5 p-6">
-            <div class="text-2xl">🎮</div>
-            <h3 class="mt-3 font-bold text-white">Intuitive portrait controls</h3>
-            <p class="mt-1.5 text-sm leading-relaxed text-slate-400">
-              Steering, drive, brake, and reverse — built for one-handed, on-the-go play.
-            </p>
-          </div>
-          <div class="rounded-2xl border border-white/10 bg-white/5 p-6">
-            <div class="text-2xl">⭐</div>
-            <h3 class="mt-3 font-bold text-white">Precision scoring</h3>
-            <p class="mt-1.5 text-sm leading-relaxed text-slate-400">
-              Park cleanly and quickly to earn up to three stars on every stage.
-            </p>
-          </div>
-          <div class="rounded-2xl border border-white/10 bg-white/5 p-6">
-            <div class="text-2xl">📴</div>
-            <h3 class="mt-3 font-bold text-white">Play anywhere, offline</h3>
-            <p class="mt-1.5 text-sm leading-relaxed text-slate-400">
-              Short levels made for quick sessions, with progress saved locally on your device.
-            </p>
-          </div>
+          <figcaption id="gallery-caption" class="mt-4 text-center text-sm font-medium text-slate-400">Stage 5 — squeezing between parked cars</figcaption>
+        </figure>
+
+        <div class="no-scrollbar -mx-4 mt-6 flex snap-x gap-3 overflow-x-auto px-4 pb-2 sm:mx-0 sm:grid sm:grid-cols-5 sm:overflow-visible sm:px-0" role="list">
+          <button type="button" data-shot="gameplay-stage5" data-caption="Stage 5 — squeezing between parked cars" aria-pressed="true"
+                  class="gallery-thumb w-40 shrink-0 snap-start overflow-hidden rounded-xl border-2 border-park-cyan transition sm:w-auto">
+            <img src="assets/shots/gameplay-stage5-sm.webp" alt="" width="640" height="360" loading="lazy" class="aspect-video w-full object-cover">
+          </button>
+          <button type="button" data-shot="gameplay-stage11" data-caption="Stage 11 — an underground garage" aria-pressed="false"
+                  class="gallery-thumb w-40 shrink-0 snap-start overflow-hidden rounded-xl border-2 border-transparent opacity-70 transition hover:opacity-100 sm:w-auto">
+            <img src="assets/shots/gameplay-stage11-sm.webp" alt="" width="640" height="360" loading="lazy" class="aspect-video w-full object-cover">
+          </button>
+          <button type="button" data-shot="gameplay-stage15" data-caption="Stage 15 — a crowded lot with no room for error" aria-pressed="false"
+                  class="gallery-thumb w-40 shrink-0 snap-start overflow-hidden rounded-xl border-2 border-transparent opacity-70 transition hover:opacity-100 sm:w-auto">
+            <img src="assets/shots/gameplay-stage15-sm.webp" alt="" width="640" height="360" loading="lazy" class="aspect-video w-full object-cover">
+          </button>
+          <button type="button" data-shot="victory-stage1" data-caption="Park it clean and fast for all three stars" aria-pressed="false"
+                  class="gallery-thumb w-40 shrink-0 snap-start overflow-hidden rounded-xl border-2 border-transparent opacity-70 transition hover:opacity-100 sm:w-auto">
+            <img src="assets/shots/victory-stage1-sm.webp" alt="" width="640" height="360" loading="lazy" class="aspect-video w-full object-cover">
+          </button>
+          <button type="button" data-shot="stage-select" data-caption="19 stages to unlock, each with three stars to earn" aria-pressed="false"
+                  class="gallery-thumb w-40 shrink-0 snap-start overflow-hidden rounded-xl border-2 border-transparent opacity-70 transition hover:opacity-100 sm:w-auto">
+            <img src="assets/shots/stage-select-sm.webp" alt="" width="640" height="360" loading="lazy" class="aspect-video w-full object-cover">
+          </button>
         </div>
       </div>
     </section>
 
-    <section id="download" class="border-t border-white/5 bg-park-navy-dark py-16 sm:py-20">
-      <div class="mx-auto max-w-5xl px-5">
-        <h2 class="text-center text-2xl font-extrabold text-white sm:text-3xl">Download Simple Park</h2>
-        <p class="mx-auto mt-3 max-w-xl text-center text-slate-400">
-          Free on Android, and now on your desktop with keyboard controls you can rebind in Settings.
-        </p>
-        <div class="mt-10 grid grid-cols-1 gap-6 md:grid-cols-3">
+    <!-- Features -->
+    <section id="features" class="border-y border-white/5 bg-park-navy py-20 sm:py-24">
+      <div class="mx-auto max-w-6xl px-4 sm:px-6">
+        <div class="mx-auto max-w-2xl text-center">
+          <p class="text-sm font-bold uppercase tracking-widest text-park-cyan">Features</p>
+          <h2 class="mt-2 text-3xl font-extrabold text-white sm:text-4xl">Easy to pick up, satisfying to master</h2>
+        </div>
 
-          <div data-os-card="android" class="flex flex-col rounded-2xl border border-white/10 bg-white/5 p-6">
-            <p data-os-tag class="mb-3 hidden self-start rounded-full bg-park-cyan/15 px-3 py-1 text-xs font-bold uppercase tracking-wide text-park-cyan">Recommended for your device</p>
-            <div class="text-2xl">🤖</div>
-            <h3 class="mt-3 text-lg font-bold text-white">Android</h3>
-            <p class="mt-1.5 flex-1 text-sm leading-relaxed text-slate-400">
+        <div class="mt-14 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+          <article class="rounded-2xl border border-white/10 bg-white/[0.03] p-6">
+            <div class="grid size-11 place-items-center rounded-xl bg-park-blue/20 text-park-cyan">
+              <svg viewBox="0 0 24 24" class="size-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M9 17V7h4a3 3 0 0 1 0 6H9"/></svg>
+            </div>
+            <h3 class="mt-5 text-xl font-bold text-white">19 handcrafted stages</h3>
+            <p class="mt-2 text-sm leading-relaxed text-slate-400">Forward bays, reverse parking, angled spots, curbside parallel parking and underground garages, each one harder than the last.</p>
+          </article>
+          <article class="rounded-2xl border border-white/10 bg-white/[0.03] p-6">
+            <div class="grid size-11 place-items-center rounded-xl bg-park-blue/20 text-park-cyan">
+              <svg viewBox="0 0 24 24" class="size-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="2"/><path d="M12 3v7M3.5 9.5l6.6 1.6M20.5 9.5l-6.6 1.6"/></svg>
+            </div>
+            <h3 class="mt-5 text-xl font-bold text-white">Real steering-wheel controls</h3>
+            <p class="mt-2 text-sm leading-relaxed text-slate-400">Turn an on-screen wheel and work the pedals, with adjustable steering sensitivity. A short walkthrough teaches you the basics on your first drive.</p>
+          </article>
+          <article class="rounded-2xl border border-white/10 bg-white/[0.03] p-6">
+            <div class="grid size-11 place-items-center rounded-xl bg-park-blue/20 text-park-cyan">
+              <svg viewBox="0 0 24 24" class="size-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5a7 7 0 0 1 14 0"/><path d="M8 12.5a4 4 0 0 1 8 0"/><circle cx="12" cy="13" r="1"/><path d="M4 18h16"/></svg>
+            </div>
+            <h3 class="mt-5 text-xl font-bold text-white">Parking sensor</h3>
+            <p class="mt-2 text-sm leading-relaxed text-slate-400">Turn on the beeping sensor and its visual distance gauge to see exactly how close you are before you touch a bumper.</p>
+          </article>
+          <article class="rounded-2xl border border-white/10 bg-white/[0.03] p-6">
+            <div class="grid size-11 place-items-center rounded-xl bg-park-gold/15 text-park-gold">
+              <svg viewBox="0 0 24 24" class="size-6" fill="currentColor" aria-hidden="true"><path d="M12 2.8l2.8 5.8 6.3.9-4.6 4.4 1.1 6.3L12 17.2l-5.6 3 1.1-6.3L2.9 9.5l6.3-.9z"/></svg>
+            </div>
+            <h3 class="mt-5 text-xl font-bold text-white">Three stars, best times</h3>
+            <p class="mt-2 text-sm leading-relaxed text-slate-400">Park cleanly and beat the target time for three stars. Your best time on every stage is saved, so there is always a record to beat.</p>
+          </article>
+          <article class="rounded-2xl border border-white/10 bg-white/[0.03] p-6">
+            <div class="grid size-11 place-items-center rounded-xl bg-park-blue/20 text-park-cyan">
+              <svg viewBox="0 0 24 24" class="size-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="6" width="20" height="12" rx="2"/><path d="M6 10h.01M10 10h.01M14 10h.01M18 10h.01M7 14h10"/></svg>
+            </div>
+            <h3 class="mt-5 text-xl font-bold text-white">Play on phone or PC</h3>
+            <p class="mt-2 text-sm leading-relaxed text-slate-400">Touch controls on Android; on Windows and Linux, drive with the keyboard and rebind every key in Settings.</p>
+          </article>
+          <article class="rounded-2xl border border-white/10 bg-white/[0.03] p-6">
+            <div class="grid size-11 place-items-center rounded-xl bg-park-blue/20 text-park-cyan">
+              <svg viewBox="0 0 24 24" class="size-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/></svg>
+            </div>
+            <h3 class="mt-5 text-xl font-bold text-white">Offline, in your language</h3>
+            <p class="mt-2 text-sm leading-relaxed text-slate-400">No account and no connection needed. Play in English, French, Spanish, German or Brazilian Portuguese.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Achievements -->
+    <section id="achievements" class="py-20 sm:py-24">
+      <div class="mx-auto grid max-w-6xl items-center gap-12 px-4 sm:px-6 lg:grid-cols-2">
+        <div>
+          <p class="text-sm font-bold uppercase tracking-widest text-park-gold">Progress</p>
+          <h2 class="mt-2 text-3xl font-extrabold text-white sm:text-4xl">Collect all nine badges</h2>
+          <p class="mt-4 text-slate-400">
+            Track the stages you've finished, the stars you've earned and every successful park on the
+            Progress screen. Can you become a Parking Master?
+          </p>
+          <ul class="mt-8 grid grid-cols-3 gap-4 sm:gap-5">
+            <li class="text-center"><img src="assets/badges/first_park.webp" alt="" width="160" height="160" loading="lazy" class="mx-auto size-20 drop-shadow-lg sm:size-24"><p class="mt-2 text-xs font-semibold text-slate-300">First Park</p></li>
+            <li class="text-center"><img src="assets/badges/perfect_park.webp" alt="" width="160" height="160" loading="lazy" class="mx-auto size-20 drop-shadow-lg sm:size-24"><p class="mt-2 text-xs font-semibold text-slate-300">Perfect Park</p></li>
+            <li class="text-center"><img src="assets/badges/stages_5.webp" alt="" width="160" height="160" loading="lazy" class="mx-auto size-20 drop-shadow-lg sm:size-24"><p class="mt-2 text-xs font-semibold text-slate-300">Getting the Hang of It</p></li>
+            <li class="text-center"><img src="assets/badges/stages_10.webp" alt="" width="160" height="160" loading="lazy" class="mx-auto size-20 drop-shadow-lg sm:size-24"><p class="mt-2 text-xs font-semibold text-slate-300">Seasoned Driver</p></li>
+            <li class="text-center"><img src="assets/badges/stages_19.webp" alt="" width="160" height="160" loading="lazy" class="mx-auto size-20 drop-shadow-lg sm:size-24"><p class="mt-2 text-xs font-semibold text-slate-300">Every Lot Conquered</p></li>
+            <li class="text-center"><img src="assets/badges/stars_15.webp" alt="" width="160" height="160" loading="lazy" class="mx-auto size-20 drop-shadow-lg sm:size-24"><p class="mt-2 text-xs font-semibold text-slate-300">Rising Star</p></li>
+            <li class="text-center"><img src="assets/badges/stars_30.webp" alt="" width="160" height="160" loading="lazy" class="mx-auto size-20 drop-shadow-lg sm:size-24"><p class="mt-2 text-xs font-semibold text-slate-300">Star Collector</p></li>
+            <li class="text-center"><img src="assets/badges/parks_25.webp" alt="" width="160" height="160" loading="lazy" class="mx-auto size-20 drop-shadow-lg sm:size-24"><p class="mt-2 text-xs font-semibold text-slate-300">Regular</p></li>
+            <li class="text-center"><img src="assets/badges/stars_57.webp" alt="" width="160" height="160" loading="lazy" class="mx-auto size-20 drop-shadow-lg sm:size-24"><p class="mt-2 text-xs font-semibold text-park-gold">Parking Master</p></li>
+          </ul>
+        </div>
+        <div class="overflow-hidden rounded-2xl border border-white/10 shadow-2xl shadow-black/60">
+          <img src="assets/shots/progress.webp" alt="The Progress screen with stats and achievements" width="900" height="900" loading="lazy" class="aspect-square w-full object-cover object-top">
+        </div>
+      </div>
+    </section>
+
+    <!-- Download -->
+    <section id="download" class="border-y border-white/5 bg-park-navy py-20 sm:py-24">
+      <div class="mx-auto max-w-6xl px-4 sm:px-6">
+        <div class="mx-auto max-w-2xl text-center">
+          <p class="text-sm font-bold uppercase tracking-widest text-park-cyan">Download</p>
+          <h2 class="mt-2 text-3xl font-extrabold text-white sm:text-4xl">Free on Android, Windows &amp; Linux</h2>
+        </div>
+        <div class="mt-12 grid grid-cols-1 gap-5 md:grid-cols-3">
+
+          <div data-os-card="android" class="flex flex-col rounded-2xl border border-white/10 bg-park-navy-dark/60 p-6">
+            <p data-os-tag class="mb-4 hidden self-start rounded-full bg-park-cyan/15 px-3 py-1 text-xs font-bold uppercase tracking-wide text-park-cyan">Recommended for your device</p>
+            <h3 class="text-2xl font-bold text-white">Android</h3>
+            <p class="mt-2 flex-1 text-sm leading-relaxed text-slate-400">
               Install from Google Play and get automatic updates.
             </p>
-            <a href="https://play.google.com/store/apps/details?id=com.ovnicode.gamestudio.simplepark" class="mt-5 self-start transition hover:opacity-80">
+            <a href="https://play.google.com/store/apps/details?id=com.ovnicode.gamestudio.simplepark" class="mt-6 self-start transition hover:opacity-85">
               <img src="assets/get-it-on-google-play-badge.svg" alt="Get it on Google Play" width="130" height="50" class="h-12 w-auto">
             </a>
           </div>
 
-          <div data-os-card="windows" class="flex flex-col rounded-2xl border border-white/10 bg-white/5 p-6">
-            <p data-os-tag class="mb-3 hidden self-start rounded-full bg-park-cyan/15 px-3 py-1 text-xs font-bold uppercase tracking-wide text-park-cyan">Recommended for your device</p>
-            <div class="text-2xl">🪟</div>
-            <h3 class="mt-3 text-lg font-bold text-white">Windows</h3>
-            <p class="mt-1.5 text-sm leading-relaxed text-slate-400">
+          <div data-os-card="windows" class="flex flex-col rounded-2xl border border-white/10 bg-park-navy-dark/60 p-6">
+            <p data-os-tag class="mb-4 hidden self-start rounded-full bg-park-cyan/15 px-3 py-1 text-xs font-bold uppercase tracking-wide text-park-cyan">Recommended for your device</p>
+            <h3 class="text-2xl font-bold text-white">Windows</h3>
+            <p class="mt-2 text-sm leading-relaxed text-slate-400">
               Windows 10 or 11, 64-bit. Run the installer and launch from the Start menu.
             </p>
-            <p class="mt-2 flex-1 text-xs leading-relaxed text-slate-500">
-              Windows may show a &ldquo;Windows protected your PC&rdquo; notice because the installer isn't code-signed yet.
+            <p class="mt-3 flex-1 text-xs leading-relaxed text-slate-500">
+              The installer isn't code-signed yet, so Windows may show &ldquo;Windows protected your PC&rdquo;.
               Choose <span class="font-semibold text-slate-400">More info &rarr; Run anyway</span>.
             </p>
             <a href="https://github.com/ovnicode/simple-park-pages/releases/latest/download/SimplePark-Setup.exe" data-os-button="windows"
-               class="mt-5 inline-flex items-center justify-center rounded-xl border border-white/15 px-6 py-3 text-base font-bold text-white transition hover:bg-white/10">
+               class="mt-6 inline-flex items-center justify-center rounded-xl border border-white/15 px-6 py-3 font-semibold text-white transition hover:bg-white/10">
               Download installer (.exe)
             </a>
           </div>
 
-          <div data-os-card="linux" class="flex flex-col rounded-2xl border border-white/10 bg-white/5 p-6">
-            <p data-os-tag class="mb-3 hidden self-start rounded-full bg-park-cyan/15 px-3 py-1 text-xs font-bold uppercase tracking-wide text-park-cyan">Recommended for your device</p>
-            <div class="text-2xl">🐧</div>
-            <h3 class="mt-3 text-lg font-bold text-white">Linux</h3>
-            <p class="mt-1.5 text-sm leading-relaxed text-slate-400">
+          <div data-os-card="linux" class="flex flex-col rounded-2xl border border-white/10 bg-park-navy-dark/60 p-6">
+            <p data-os-tag class="mb-4 hidden self-start rounded-full bg-park-cyan/15 px-3 py-1 text-xs font-bold uppercase tracking-wide text-park-cyan">Recommended for your device</p>
+            <h3 class="text-2xl font-bold text-white">Linux</h3>
+            <p class="mt-2 text-sm leading-relaxed text-slate-400">
               64-bit (x86_64). Make the AppImage executable, then run it:
             </p>
-            <pre class="mt-2 flex-1 overflow-x-auto rounded-lg bg-black/40 p-3 text-xs leading-relaxed text-slate-300"><code>chmod +x SimplePark-x86_64.AppImage
+            <pre class="mt-3 overflow-x-auto rounded-lg bg-black/50 p-3 text-xs leading-relaxed text-slate-300"><code>chmod +x SimplePark-x86_64.AppImage
 ./SimplePark-x86_64.AppImage</code></pre>
-            <p class="mt-2 text-xs leading-relaxed text-slate-500">
-              If it won't start, install <span class="font-semibold text-slate-400">libfuse2</span>.
-              Prefer no AppImage? <a href="https://github.com/ovnicode/simple-park-pages/releases/latest/download/SimplePark-linux-x86_64.tar.gz" class="font-semibold text-slate-400 underline transition hover:text-white">Download the .tar.gz</a>.
+            <p class="mt-3 flex-1 text-xs leading-relaxed text-slate-500">
+              Won't start? Install <span class="font-semibold text-slate-400">libfuse2</span>, or
+              <a href="https://github.com/ovnicode/simple-park-pages/releases/latest/download/SimplePark-linux-x86_64.tar.gz" class="font-semibold text-slate-400 underline transition hover:text-white">download the .tar.gz</a>.
             </p>
             <a href="https://github.com/ovnicode/simple-park-pages/releases/latest/download/SimplePark-x86_64.AppImage" data-os-button="linux"
-               class="mt-5 inline-flex items-center justify-center rounded-xl border border-white/15 px-6 py-3 text-base font-bold text-white transition hover:bg-white/10">
+               class="mt-6 inline-flex items-center justify-center rounded-xl border border-white/15 px-6 py-3 font-semibold text-white transition hover:bg-white/10">
               Download AppImage
             </a>
           </div>
@@ -196,56 +283,87 @@
       </div>
     </section>
 
-    <section id="testers" class="py-16">
-      <div class="mx-auto max-w-3xl px-5 text-center">
-        <h2 class="text-2xl font-extrabold text-white sm:text-3xl">Become a tester</h2>
-        <p class="mx-auto mt-3 max-w-xl text-slate-400">
-          Try new stages and features on Android before everyone else, and help us shape Simple Park.
-        </p>
-        <ol class="mx-auto mt-8 grid max-w-2xl grid-cols-1 gap-4 text-left sm:grid-cols-3">
-          <li class="rounded-2xl border border-white/10 bg-white/5 p-5">
-            <p class="text-sm font-bold text-park-cyan">Step 1</p>
-            <p class="mt-1.5 text-sm leading-relaxed text-slate-300">Join our testers Google Group with your Google account.</p>
-          </li>
-          <li class="rounded-2xl border border-white/10 bg-white/5 p-5">
-            <p class="text-sm font-bold text-park-cyan">Step 2</p>
-            <p class="mt-1.5 text-sm leading-relaxed text-slate-300">Open the testing page and tap <span class="font-semibold text-white">Become a tester</span>.</p>
-          </li>
-          <li class="rounded-2xl border border-white/10 bg-white/5 p-5">
-            <p class="text-sm font-bold text-park-cyan">Step 3</p>
-            <p class="mt-1.5 text-sm leading-relaxed text-slate-300">Install or update Simple Park from Google Play. Test builds arrive automatically.</p>
-          </li>
-        </ol>
-        <div class="mt-8 flex flex-col items-center justify-center gap-3 sm:flex-row">
-          <a href="https://groups.google.com/g/ovnicode-game-studio-testers"
-             class="inline-flex items-center justify-center rounded-xl bg-park-cyan px-6 py-3 text-base font-bold text-park-navy-dark transition hover:opacity-90">
-            1. Join the testers group
-          </a>
-          <a href="https://play.google.com/apps/testing/com.ovnicode.gamestudio.simplepark"
-             class="inline-flex items-center justify-center rounded-xl border border-white/15 px-6 py-3 text-base font-bold text-white transition hover:bg-white/10">
-            2. Opt in on Google Play
-          </a>
+    <!-- Testers -->
+    <section id="testers" class="py-20 sm:py-24">
+      <div class="mx-auto max-w-6xl px-4 sm:px-6">
+        <div class="relative overflow-hidden rounded-3xl border border-park-cyan/20 bg-linear-to-br from-park-blue/25 via-park-navy to-park-navy-dark p-8 sm:p-12">
+          <div class="grid items-center gap-10 lg:grid-cols-2">
+            <div>
+              <p class="text-sm font-bold uppercase tracking-widest text-park-cyan">Beta program</p>
+              <h2 class="mt-2 text-3xl font-extrabold text-white sm:text-4xl">Become a tester</h2>
+              <p class="mt-4 text-slate-300">
+                Play new stages and features on Android before anyone else, and help shape what comes next.
+              </p>
+              <div class="mt-8 flex flex-col gap-3 sm:flex-row">
+                <a href="https://groups.google.com/g/ovnicode-game-studio-testers"
+                   class="inline-flex items-center justify-center rounded-xl bg-park-cyan px-6 py-3 font-bold text-park-navy-dark transition hover:bg-park-cyan/85">
+                  1. Join the testers group
+                </a>
+                <a href="https://play.google.com/apps/testing/com.ovnicode.gamestudio.simplepark"
+                   class="inline-flex items-center justify-center rounded-xl border border-white/20 px-6 py-3 font-bold text-white transition hover:bg-white/10">
+                  2. Opt in on Google Play
+                </a>
+              </div>
+            </div>
+            <ol class="space-y-4">
+              <li class="flex gap-4 rounded-2xl border border-white/10 bg-black/20 p-5">
+                <span class="font-display grid size-9 shrink-0 place-items-center rounded-full bg-park-cyan/15 text-lg font-extrabold text-park-cyan">1</span>
+                <p class="text-sm leading-relaxed text-slate-300">Join our testers Google Group with your Google account.</p>
+              </li>
+              <li class="flex gap-4 rounded-2xl border border-white/10 bg-black/20 p-5">
+                <span class="font-display grid size-9 shrink-0 place-items-center rounded-full bg-park-cyan/15 text-lg font-extrabold text-park-cyan">2</span>
+                <p class="text-sm leading-relaxed text-slate-300">Open the testing page and tap <span class="font-semibold text-white">Become a tester</span>.</p>
+              </li>
+              <li class="flex gap-4 rounded-2xl border border-white/10 bg-black/20 p-5">
+                <span class="font-display grid size-9 shrink-0 place-items-center rounded-full bg-park-cyan/15 text-lg font-extrabold text-park-cyan">3</span>
+                <p class="text-sm leading-relaxed text-slate-300">Install or update Simple Park from Google Play. Test builds arrive automatically. Use the same Google account on your phone, and leave anytime from the testing page.</p>
+              </li>
+            </ol>
+          </div>
         </div>
-        <p class="mt-4 text-xs text-slate-500">Use the same Google account on your phone. You can leave the program anytime from the testing page.</p>
       </div>
     </section>
   </main>
 
-  <footer class="border-t border-white/10 bg-park-navy-dark">
-    <div class="mx-auto flex max-w-5xl flex-col items-center gap-3 px-5 py-8 text-sm text-slate-400 sm:flex-row sm:justify-between">
-      <p>&copy; 2026 Ovnicode. Simple Park.</p>
-      <div class="flex items-center gap-5">
+  <footer class="border-t border-white/10">
+    <div class="mx-auto flex max-w-6xl flex-col items-center gap-5 px-4 py-10 text-sm text-slate-400 sm:flex-row sm:justify-between sm:px-6">
+      <div class="flex items-center gap-3">
+        <img src="assets/icon-512.webp" alt="" width="28" height="28" class="size-7 rounded-lg">
+        <p>&copy; 2026 Ovnicode. Simple Park 3D.</p>
+      </div>
+      <nav class="flex flex-wrap items-center justify-center gap-x-6 gap-y-2">
         <a href="https://play.google.com/store/apps/details?id=com.ovnicode.gamestudio.simplepark" class="font-semibold text-slate-300 transition hover:text-white">Google Play</a>
         <a href="#download" class="font-semibold text-slate-300 transition hover:text-white">Download</a>
         <a href="#testers" class="font-semibold text-slate-300 transition hover:text-white">Become a tester</a>
         <a href="privacy-policy.html" class="font-semibold text-slate-300 transition hover:text-white">Privacy Policy</a>
         <a href="mailto:support@ovnicode.com" class="font-semibold text-slate-300 transition hover:text-white">Contact</a>
-      </div>
+      </nav>
     </div>
   </footer>
 
 
   <script>
+    // Gameplay gallery: thumbnails swap the large image.
+    (function () {
+      var main = document.getElementById("gallery-main");
+      var caption = document.getElementById("gallery-caption");
+      var thumbs = document.querySelectorAll(".gallery-thumb");
+      thumbs.forEach(function (btn) {
+        btn.addEventListener("click", function () {
+          main.src = "assets/shots/" + btn.dataset.shot + ".webp";
+          main.alt = btn.dataset.caption;
+          caption.textContent = btn.dataset.caption;
+          thumbs.forEach(function (t) {
+            var on = t === btn;
+            t.setAttribute("aria-pressed", on);
+            t.classList.toggle("border-park-cyan", on);
+            t.classList.toggle("border-transparent", !on);
+            t.classList.toggle("opacity-70", !on);
+          });
+        });
+      });
+    })();
+
     // Highlight the download that fits the visitor's OS. Without JS (or on macOS/iOS/ChromeOS)
     // every option is shown equally.
     (function () {
